@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/root/styles/styles.css">
+
+    <title>Agenda de Contactos</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="text-center">
+            <p class="display-5 mb-3 fw-bolder">Usuarios</p>
+            <p class="display-8 mb-6">Registre y elimine nuevos usuarios</p>
+        </div>
+        <!--Formulario-->
+        <div class="main row justify-content-center">
+            <form action="" id="form-user" class="row justify-content-center mb-4" autocomplete="off">
+                <!--Nombre-->
+                <div class="col-5 mb-3">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nombre">
+                </div>
+                <!--Teléfono-->
+                <div class="col-5 mb-3">
+                    <label for="phone">Teléfono</label>
+                    <input type="number" class="form-control" id="phone" placeholder="Teléfono">
+                </div>
+                <!--Fecha de nacimiento-->
+                <div class="col-5 mb-3">
+                    <label for="birth">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="birth" placeholder="Fecha de nacimiento">
+                </div>
+                <!--Dirección-->
+                <div class="col-5 mb-3">
+                    <label for="address">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="Dirección">
+                </div>
+                <!--Correo electrónico-->
+                <div class="col-5 mb-3">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                </div>
+                <!--Submit-->
+                <div class="col-10">
+                    <input class="btn btn-warning add-btn" type="submit" value="Crear">
+                </div>
+            </form>
+        <!--Listado-->
+        <div class="col-10 mt-5 col-md-10">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Dirección</th>
+                        <th>Correo electrónico</th>
+                        <th>
+                            <a href="" class="btn btn-warning btn-sm edit">Editar</a>
+                            <a href="" class="btn btn-danger btn-sm delete">Borrar</a>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="/root/js/script.js"></script>
+</body>
+</html>
